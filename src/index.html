@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      canvas {
+        display: block;
+      }
+      button {
+        position: fixed;
+        right: 0;
+        bottom: 20px;
+        left: 0;
+        margin: 0 auto;
+        width: 2em;
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 999em;
+        font-size: 1.3rem;
+        cursor: pointer;
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.8);
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="app"></canvas>
+    <button type="button" id="start-animation">⚡️</button>
+    <script src="./js/app.ts"></script>
+  </body>
+</html>

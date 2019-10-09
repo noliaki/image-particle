@@ -1,0 +1,15 @@
+uniform float uProgress;
+uniform float uTime;
+uniform vec2 uSize;
+uniform sampler2D map;
+uniform sampler2D map2;
+attribute vec4 aStartPosition;
+attribute vec4 aEndPosition;
+attribute vec4 aDelayDuration;
+attribute vec4 aControl0;
+attribute vec4 aControl1;
+attribute vec4 aStaggerTime;
+attribute vec4 aStagger;
+attribute vec4 aScale;
+attribute vec4 aRotate;
+const float rad = PI / 180.0;
