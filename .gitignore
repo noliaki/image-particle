@@ -67,3 +67,6 @@ typings/
 dist/*
 !dist/*.jpg
 !dist/*.png
+
+# Local Netlify folder
+.netlify

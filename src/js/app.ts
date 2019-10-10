@@ -82,10 +82,9 @@ function updateParticleProgress(): void {
 }
 
 ;(async (): Promise<void> => {
-  const texture1: Three.Texture = await loadTexture('cat-2.jpg')
-  const texture2: Three.Texture = await loadTexture('cat-1.jpg')
+  const texture1: Three.Texture = await loadTexture('cat.jpg')
 
-  imageParticle = new ImageParticle(texture1, texture2)
+  imageParticle = new ImageParticle(texture1)
   threeBase.addToScene(imageParticle)
   ;(document.getElementById(
     'start-animation'
