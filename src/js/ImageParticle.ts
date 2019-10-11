@@ -38,16 +38,16 @@ export default class ImageParticle extends Three.Mesh {
 
     geometry.createAttribute('aStaggerTime', 4, (data): void => {
       new Three.Vector4(
-        Three.Math.randFloat(20, 200),
-        Three.Math.randFloat(10, 200),
-        Three.Math.randFloat(10, 200),
+        Three.Math.randFloat(1000, 3000),
+        Three.Math.randFloat(1000, 3000),
+        Three.Math.randFloat(1000, 3000),
         Three.Math.randFloat(0, 0.5)
       ).toArray(data)
     })
 
     geometry.createAttribute('aScale', 4, (data): void => {
       new Three.Vector4(
-        Three.Math.randFloat(1, 20),
+        Three.Math.randFloat(1, 8),
         Three.Math.randFloat(10, 200),
         Three.Math.randFloat(10, 200),
         Math.random()
